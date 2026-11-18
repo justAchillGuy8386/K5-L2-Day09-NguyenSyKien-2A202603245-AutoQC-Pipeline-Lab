@@ -21,10 +21,9 @@ Gợi ý
 - `iou_xywh(a, b)` có sẵn trong common.py.
 - Ngưỡng nằm trong `cfg["label_format"]` — đừng viết cứng số vào code.
 """
-from ..common import ERROR, WARN, Issue, iou_xywh, parse_yolo_line  # noqa: F401
-
-
 from ..common import ERROR, WARN, Issue, iou_xywh, parse_yolo_line
+
+
 def run(ds, cfg):
     issues = []
     lbl_cfg = cfg.get("label_format", {})
